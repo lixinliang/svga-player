@@ -1,2 +1,134 @@
 // 导入公共scss模块
 @import "base/base";
+
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    // overflow: hidden;
+    padding-bottom: 20px;
+}
+
+a {
+    display: block;
+    width: 80%;
+    margin: 30px auto 0;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        color: #29ade0;
+        border: 1px solid #29ade0;
+    }
+}
+
+h2,
+h3 {
+    font-weight: 400;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+h3 {
+    font-size: 24px;
+}
+.player {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    border: 1px solid #cdcdcd;
+}
+#canvas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    outline: 0;
+    &:hover {
+        color: #29ade0;
+        border: 1px solid #29ade0;
+    }
+}
+.download-progress,
+.play-progress {
+    width: 80%;
+    height: 4px;
+    box-shadow: 0 0 0 1px #cdcdcd;
+    margin: 0 auto;
+    i {
+        display: block;
+        height: 100%;
+        background: #29ade0;
+        transition: width 200ms linear;
+    }
+}
+.download-time,
+.play-time {
+    width: 80%;
+    font-size: 20px;
+    margin: 5px auto 0;
+    font-size: 20px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.mock-box {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.mock-display {
+    margin-top: 10px;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+}
+.mock-option {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    select {
+        float: left;
+        height: 26px;
+        line-height: 26px;
+        font-size: 20px;
+        // width: 120px;
+    }
+    input {
+        float: left;
+        height: 26px;
+        line-height: 26px;
+        font-size: 20px;
+        width: 80px;
+        padding: 0;
+        border: 1px solid #cecece;
+        border-radius: 5px;
+        margin-right: 15px;
+        text-align: right;
+    }
+}
