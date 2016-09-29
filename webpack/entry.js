@@ -1,1 +1,0 @@
-module.exports = {"index":"/Users/lixinliang/GitHub/svga-player/src/entry/index.js"}
