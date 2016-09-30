@@ -31,6 +31,7 @@ module.exports = function ( $ ) {
                     let downloadTime = timer.end('download');
                     $('.download-time span').innerHTML = downloadTime/1000 + 's';
                     $('.download-progress i').style.width = '100%';
+                    debugger;
                     $('.play').on('click', function () {
                         this.off('click', arguments.callee, false);
                         // start play

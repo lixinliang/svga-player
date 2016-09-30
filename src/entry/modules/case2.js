@@ -1,5 +1,7 @@
 import timer from './timer';
 
+// 压缩比例太低...
+
 // return src or image data
 let getData = (function () {
     let canvas = document.createElement('canvas');
