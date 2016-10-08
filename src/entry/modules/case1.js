@@ -22,7 +22,6 @@ module.exports = function ( $ ) {
             }).call(document.createElement('canvas'), function ( canvas ) {
                 // create player
                 canvas.id = 'canvas';
-                let context = canvas.getContext('2d');
                 let player = new SVGAPlayer(canvas.id);
                 // start download
                 timer.start('download');
@@ -31,7 +30,7 @@ module.exports = function ( $ ) {
                     let downloadTime = timer.end('download');
                     $('.download-time span').innerHTML = downloadTime/1000 + 's';
                     $('.download-progress i').style.width = '100%';
-                    debugger;
+                    // debugger;
                     $('.play').on('click', function () {
                         this.off('click', arguments.callee, false);
                         // start play
